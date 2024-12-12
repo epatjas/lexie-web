@@ -1,17 +1,23 @@
 {
-  "dependencies": {
-    "@next/font": "^14.2.15",
-    "@types/node": "^22.10.2",
-    "@types/react": "^19.0.1",
-    "lucide-react": "^0.468.0"
-  },
+  "name": "lexie-web",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "lucide-react": "^0.298.0"
+  },
   "devDependencies": {
-    "typescript": "5.7.2"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
   }
 }
