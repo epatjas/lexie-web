@@ -1,21 +1,20 @@
-@tailwind base;
+/* Import our custom styles */
+@import '../styles/reset.css';
+@import '../styles/variables.css';
+
+/* Remove Tailwind directives */
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
+/* Keep the dark mode preferences if needed, but using our variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: var(--background-01);
+  --foreground: var(--text-primary);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  background: var(--background-01);
+  font-family: var(--font-inter), system-ui, sans-serif;
 }
