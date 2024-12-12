@@ -40,6 +40,8 @@ input, button, textarea, select {
   --button-text: hsl(240, 100%, 97%);
 
   /* Spacing */
+  --space-8: 8px;
+  --space-12: 12px;
   --space-16: 16px;
   --space-24: 24px;
   --space-32: 32px;
@@ -65,9 +67,13 @@ body {
   color: var(--text-primary);
 }
 
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
 h1 {
   font-size: 64px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.1;
 }
 

@@ -82,12 +82,16 @@
   }
 
   .Features_card__sn_WH h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .Features_card__sn_WH p {
     font-size: 16px;
   }
+  .Features_card__sn_WH {
+    gap: var(--space-12);
+  }
+
 } 
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/sections/Benefits.module.css ***!
@@ -247,7 +251,6 @@
 @media (max-width: 1023px) {
   .FAQ_title__zuKnt {
     font-size: 36px;
-    margin-bottom: var(--space-48);
   }
 
   .FAQ_accordion__9r1pK .FAQ_trigger__gjvdP {
@@ -275,7 +278,6 @@
   .FAQ_title__zuKnt {
     text-align: center;
     font-size: 32px;
-    margin-bottom: var(--space-32);
   }
 
   .FAQ_accordion__9r1pK .FAQ_trigger__gjvdP {
@@ -460,7 +462,7 @@
 .Hero_text__cLcsN {
   display: flex;
   flex-direction: column;
-  gap: var(--space-32);
+  gap: var(--space-24);
   max-width: 640px;
   padding-right: var(--space-48);
 }
@@ -475,14 +477,14 @@
   font-size: 20px;
   line-height: 1.5;
   color: var(--text-secondary);
-  margin-top: -var(--space-16);
+  margin-top: 0;
 }
 
 .Hero_button__hdTRA {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: var(--space-16) var(--space-32);
+  padding: var(--space-12) var(--space-24);
   background-color: var(--text-primary);
   color: var(--background-01);
   border: none;
@@ -535,6 +537,7 @@
   }
 
   .Hero_logo__H7XJO {
+    width: 64px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -546,7 +549,6 @@
 
   .Hero_ingress__hE5Ra {
     font-size: 18px;
-    margin-top: -var(--space-8);
   }
 
   .Hero_imageWrapper__i5jTp {
@@ -568,11 +570,15 @@
 
 @media (max-width: 640px) {
   .Hero_title__IAc43 {
-    font-size: 40px;
+    font-size: 44px;
   }
 
   .Hero_text__cLcsN {
-    gap: var(--space-24);
+    gap: var(--space-16);
+  }
+
+  .Hero_logo__H7XJO {
+    width: 56px;
   }
 } 
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
