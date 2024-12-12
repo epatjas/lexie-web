@@ -65,7 +65,7 @@
   line-height: 1.2;
   margin: 0;
   font-weight: 300;
-  color: var(--text);
+  color: var(--text-primary);
   align-self: end;
 }
 
@@ -85,6 +85,53 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     text-align: center;
+    gap: var(--space-32);
+    padding: var(--space-32);
+    justify-items: center;
+  }
+
+  .download p {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .qr {
     margin: 0 auto;
+  }
+
+  .content h2 {
+    font-size: 36px;
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+
+  .cta {
+    padding: var(--space-64) 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .content h2 {
+    font-size: 32px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .download {
+    padding: var(--space-24);
+    gap: var(--space-24);
+  }
+
+  .download p {
+    font-size: 18px;
+  }
+
+  .cta {
+    padding: var(--space-48) 0;
   }
 } 

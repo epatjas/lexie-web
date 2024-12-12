@@ -33,9 +33,28 @@
 }
 
 /* Mobile */
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: var(--space-48);
+  }
+
+  .accordion .trigger {
+    font-size: 18px;
+  }
+
+  .accordion .content p {
+    font-size: 16px;
+  }
+
   .faq {
     padding: var(--space-64) 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .faq {
+    padding: var(--space-48) 0;
   }
 
   .container {
@@ -44,5 +63,11 @@
 
   .title {
     text-align: center;
+    font-size: 32px;
+    margin-bottom: var(--space-32);
+  }
+
+  .accordion .trigger {
+    font-size: 17px;
   }
 } 

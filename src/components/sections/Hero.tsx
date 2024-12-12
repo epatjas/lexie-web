@@ -24,7 +24,7 @@ export default function Hero() {
               height={40}
               className={styles.logo}
             />
-            <h1>Parempi tapa harjoitella.</h1>
+            <h1 className={styles.title}>Parempi tapa harjoitella.</h1>
             <p className={styles.ingress}>
               Lexie auttaa sinua harjoittelemaan kokeisiin ja tekemään läksyjä. 
               Oppimateriaalista syntyy automaattisesti muistikortteja kertaamiseen 
