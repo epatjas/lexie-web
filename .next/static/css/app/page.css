@@ -1,0 +1,463 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/sections/Features.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.Features_features__8upAF {
+  padding: var(--space-120) 0;
+  background-color: var(--background-01);
+}
+
+.Features_title__qMdDb {
+  text-align: center;
+  margin-bottom: var(--space-64);
+}
+
+.Features_grid__JptmF {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: var(--space-32);
+  gap: var(--space-32);
+}
+
+.Features_card__sn_WH {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+}
+
+.Features_imageWrapper__9lhR3 {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--background-02);
+  margin-bottom: var(--space-16);
+}
+
+.Features_image__PQl0p {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Features_card__sn_WH h3 {
+  color: var(--text-primary);
+}
+
+.Features_card__sn_WH p {
+  color: var(--text-secondary);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1023px) {
+  .Features_grid__JptmF {
+    grid-template-columns: 1fr;
+    gap: var(--space-64);
+  }
+
+  .Features_card__sn_WH {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+} 
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/sections/Benefits.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.Benefits_benefits__dTWrz {
+  padding: var(--space-120) 0;
+  background-color: var(--background-01);
+}
+
+.Benefits_title__fxOpb {
+  text-align: left;
+  margin-bottom: var(--space-64);
+  max-width: 600px;
+}
+
+.Benefits_grid__GtObN {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: var(--space-32);
+  gap: var(--space-32);
+}
+
+.Benefits_card__nefLL {
+  background-color: var(--background-02);
+  border-radius: var(--radius-md);
+  padding: var(--space-32);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  border: 1px solid var(--stroke);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.Benefits_card__nefLL:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-color: var(--text-secondary);
+}
+
+.Benefits_icon__nYyyB {
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.Benefits_card__nefLL:hover .Benefits_icon__nYyyB {
+  transform: scale(1.1);
+}
+
+.Benefits_card__nefLL h3 {
+  color: var(--text-primary);
+  font-size: 20px;
+}
+
+.Benefits_card__nefLL p {
+  color: var(--text-secondary);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1023px) {
+  .Benefits_grid__GtObN {
+    grid-template-columns: 1fr;
+    gap: var(--space-24);
+  }
+
+  .Benefits_title__fxOpb {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} 
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/sections/FAQ.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.FAQ_faq__rPNyU {
+  padding: var(--space-120) 0;
+  background-color: var(--background-01);
+}
+
+.FAQ_container__lURr4 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-64);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.FAQ_title__zuKnt {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.FAQ_grid__zlOh4 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .FAQ_container__lURr4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: none;
+    margin: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .FAQ_faq__rPNyU {
+    padding: var(--space-64) 0;
+  }
+
+  .FAQ_container__lURr4 {
+    gap: var(--space-32);
+  }
+
+  .FAQ_title__zuKnt {
+    text-align: center;
+  }
+} 
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/sections/CTA.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.CTA_cta__Q0eAs {
+  padding: var(--space-120) 0;
+  background-color: var(--background-01);
+}
+
+.CTA_grid__On_Iu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--space-64);
+  gap: var(--space-64);
+  align-items: center;
+}
+
+.CTA_imageWrapper__y5UJY {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.CTA_image__v2xUt {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+.CTA_content__RZ9jt {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  max-width: 640px;
+}
+
+.CTA_logo__pAm9V {
+  width: 80px;
+  height: auto;
+}
+
+.CTA_content__RZ9jt h2 {
+  color: var(--text-primary);
+  margin-bottom: var(--space-8);
+}
+
+.CTA_content__RZ9jt p {
+  color: var(--text-secondary);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.CTA_download__RgPX7 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  grid-gap: var(--space-24);
+  gap: var(--space-24);
+  padding: var(--space-24);
+  background-color: var(--background-02);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--stroke);
+  max-width: 480px;
+  width: 100%;
+  margin-top: var(--space-24);
+}
+
+.CTA_download__RgPX7 p {
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 300;
+  color: var(--text);
+  align-self: end;
+}
+
+@media (max-width: 1023px) {
+  .CTA_grid__On_Iu {
+    grid-template-columns: 1fr;
+    gap: var(--space-64);
+  }
+
+  .CTA_content__RZ9jt {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .CTA_download__RgPX7 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+} 
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/ui/Container.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.Container_container__jbVMe {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 var(--space-24);
+}
+
+@media (min-width: 768px) {
+  .Container_container__jbVMe {
+    padding: 0 var(--space-40);
+  }
+} 
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/sections/Hero.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.Hero_hero__sbIHl {
+  background-color: var(--background-01);
+  overflow: hidden;
+  padding-top: var(--space-32);
+}
+
+.Hero_content__pgel1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--space-96);
+  gap: var(--space-96);
+  align-items: center;
+  position: relative;
+}
+
+.Hero_text__cLcsN {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+  max-width: 640px;
+  padding-right: var(--space-48);
+}
+
+.Hero_logo__H7XJO {
+  width: 80px;
+  height: auto;
+  margin-bottom: var(--space-16);
+}
+
+.Hero_ingress__hE5Ra {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-top: -var(--space-16);
+}
+
+.Hero_button__hdTRA {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-16) var(--space-40);
+  background-color: var(--text-primary);
+  color: var(--background-01);
+  border: none;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.Hero_button__hdTRA:hover {
+  opacity: 0.9;
+}
+
+.Hero_imageWrapper__i5jTp {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: calc(var(--space-40) * -1);
+}
+
+.Hero_image__cKxpA {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 1023px) {
+  .Hero_content__pgel1 {
+    grid-template-columns: 1fr;
+    gap: var(--space-64);
+  }
+
+  .Hero_imageWrapper__i5jTp {
+    margin-right: 0;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .Hero_text__cLcsN {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+  
+  .Hero_logo__H7XJO {
+    margin-left: auto;
+    margin-right: auto;
+  }
+} 
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/ui/Accordion.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.Accordion_accordion__DE_P5 {
+  background-color: var(--background-02);
+  border-radius: 24px;
+  border: 1px solid var(--stroke);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Accordion_accordion__DE_P5:hover {
+  background-color: var(--background-03);
+  border-color: var(--text-secondary);
+  transform: translateY(-2px);
+}
+
+.Accordion_trigger__gHxIC {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-24);
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.Accordion_accordion__DE_P5:hover .Accordion_trigger__gHxIC {
+  color: var(--text-primary);
+}
+
+.Accordion_icon__1s1p2 {
+  transition: transform 0.3s ease;
+}
+
+.Accordion_open__RNOcV .Accordion_icon__1s1p2 {
+  transform: rotate(180deg);
+}
+
+.Accordion_content__6btO9 {
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.Accordion_open__RNOcV .Accordion_content__6btO9 {
+  height: auto;
+  opacity: 1;
+}
+
+.Accordion_inner__aIkeF {
+  padding: 0 var(--space-24) var(--space-24);
+  color: var(--text-secondary);
+  font-size: 18px;
+  line-height: 1.6;
+} 
