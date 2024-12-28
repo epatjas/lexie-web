@@ -20,9 +20,9 @@ export default function Benefits() {
             <div className={styles.icon}>
               <GraduationCap size={24} strokeWidth={1.5} />
             </div>
-            <h3>Tukea kotitehtävien tekoon</h3>
+            <h3>Henkilökohtainen oppimisen tuki</h3>
             <p>
-              Lexie toimii kuin henkilökohtainen apuopettaja läksyjen teossa. Se selittää vaikeat asiat ymmärrettävästi ja ohjaa askel askeleelta eteenpäin.
+            Lexie toimii kuin henkilökohtainen apuopettaja. Se selittää vaikeat asiat ymmärrettävästi ja ohjaa askel askeleelta eteenpäin
             </p>
           </div>
 
@@ -30,9 +30,9 @@ export default function Benefits() {
             <div className={styles.icon}>
               <BookCheck size={24} strokeWidth={1.5} />
             </div>
-            <h3>Helpottaa kokeisiin valmistautumista</h3>
+            <h3>Tehosta oppimistasi</h3>
             <p>
-              Muistikortit ja harjoitustehtävät tekevät kokeisiin valmistautumisesta tehokkaampaa. Näet heti, mitkä asiat osaat jo hyvin ja mitä pitää vielä kerrata.
+            Muistikortit ja harjoitustehtävät tekevät oppimisesta tehokkaampaa. Näet heti, mitkä asiat osaat jo hyvin ja mitä pitää vielä kerrata.
             </p>
           </div>
 
@@ -40,9 +40,9 @@ export default function Benefits() {
             <div className={styles.icon}>
               <ScanText size={24} strokeWidth={1.5} />
             </div>
-            <h3>Opiskele missä vain</h3>
+            <h3>Opi missä vain</h3>
             <p>
-              Poissaolojen aikana voit kuvata materiaalit Lexieen. Kaikki säilyy tallessa ja pysyt mukana opinnoissa, vaikka et pääsisi kouluun.
+            Tallenna ja käytä sisältöä missä ja milloin haluat. Joustava oppiminen omaan tahtiisi.
             </p>
           </div>
 
@@ -52,9 +52,7 @@ export default function Benefits() {
             </div>
             <h3>Opiskele omalla kielelläsi</h3>
             <p>
-              Jos suomi ei ole äidinkielesi, Lexie on korvaamaton apu. Se kääntää vaikeat sanat 
-              ja käsitteet omalle kielellesi ja selittää ne selkeästi. Näin opit samalla sekä 
-              oppiaineen sisällön että suomen kieltä.
+            Lexie kääntää sisällön haluamallesi kielelle ja selittää vaikeat käsitteet selkeästi. Näin opit samalla sekä sisällön että kielen
             </p>
           </div>
 
@@ -64,7 +62,7 @@ export default function Benefits() {
             </div>
             <h3>Auttaa ymmärtämään opeteltavat asiat</h3>
             <p>
-              Lexie auttaa hahmottamaan oppimateriaalin keskeiset asiat ja selittää vaikeat kohdat ymmärrettävästi.
+            Lexie auttaa hahmottamaan keskeiset asiat ja selittää vaikeat kohdat ymmärrettävästi.
             </p>
           </div>
 
@@ -72,9 +70,9 @@ export default function Benefits() {
             <div className={styles.icon}>
               <PersonStanding size={24} strokeWidth={1.5} />
             </div>
-            <h3>Muokkaa oppimateriaali itsellesi sopivaksi</h3>
+            <h3>Mukautuva oppimiskokemus</h3>
             <p>
-              Voit vaihtaa fonttia, suurentaa tekstiä tai kuunnella sen ääneen luettuna. Näin jokainen löytää itselleen sopivan tavan opiskella
+            Muokkaa fonttia, tekstin kokoa ja kuuntele sisältö ääneenluettuna. Näin löydät itsellesi sopivan tavan oppia
             </p>
           </div>
         </div>

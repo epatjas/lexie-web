@@ -27,8 +27,8 @@ export default function CTA() {
             />
             <h2>Tule testaamaan</h2>
             <p>
-             Etsimme testaajia Lexielle. Kokeile sovellusta, ja kerro meille miten se toimii. 
-             Palautteesi auttaa meitä kehittämään sovellusta.
+            Etsimme testaajia Lexielle. Kerro meille miten käytät sovellusta ja millaiseen oppimiseen se soveltuu parhaiten. 
+            Palautteesi avulla kehitämme Lexiestä entistä paremman oppimisen työkalun. Tule mukaan kehittämään tulevaisuuden oppimisratkaisua.
             </p>
             <div className={styles.download} id="download-app">
               <p>Skannaa ja lataa LexieLearn</p>

@@ -19,10 +19,9 @@ export default function Features() {
                 className={styles.image}
               />
             </div>
-            <h3>Tallentaa tekstit digitaaliseen muotoon</h3>
+            <h3>Mukautuva teksti oppimisen tueksi</h3>
             <p>
-              Lexie skannaa oppimateriaalin sovellukseen, jossa tekstiä voi kuunnella tai kääntää 
-              toiselle kielelle. Teksti on aina mukana, vaikka kirja jäisi kouluun.
+            Muokkaa tekstin kokoa, fonttia ja kieltä tarpeisiisi sopivaksi. Jokainen oppii omalla tavallaan.
             </p>
           </div>
 
@@ -53,7 +52,7 @@ export default function Features() {
                 className={styles.image}
               />
             </div>
-            <h3>Harjoitustehtävien avulla voit kerrata ja testata osaamistasi</h3>
+            <h3>Testaa ja vahvista osaamistasi</h3>
             <p>
               Monipuoliset tehtävät auttavat kertaamaan opittua ja näyttävät, 
               mitkä asiat osaat jo hyvin.

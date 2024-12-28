@@ -26,9 +26,7 @@ export default function Hero() {
             />
             <h1 className={styles.title}>Parempi tapa harjoitella.</h1>
             <p className={styles.ingress}>
-              Lexie auttaa sinua harjoittelemaan kokeisiin ja tekemään läksyjä. 
-              Oppimateriaalista syntyy automaattisesti muistikortteja kertaamiseen 
-              ja tehtäviä osaamisen testaamiseen.
+            Lexie muuntaa minkä tahansa painetun tekstin vuorovaikutteiseksi oppimiskokemukseksi. Luo automaattisesti muistikortteja kertaamiseen ja testaa osaamistasi interaktiivisilla tehtävillä.
             </p>
             <button 
               className={styles.button}
