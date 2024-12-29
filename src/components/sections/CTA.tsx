@@ -5,7 +5,7 @@ import styles from './CTA.module.css'
 
 export default function CTA() {
   return (
-    <section className={styles.cta}>
+    <section id="cta" className={styles.cta}>
       <Container>
         <div className={styles.grid}>
           <div className={styles.imageWrapper}>

@@ -7,6 +7,9 @@
   text-align: left;
   margin-bottom: var(--space-64);
   max-width: 600px;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .grid {

@@ -38,6 +38,10 @@
 .content h2 {
   color: var(--text-primary);
   margin-bottom: var(--space-8);
+  margin-top: var(--space-16);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .content p {

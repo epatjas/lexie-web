@@ -1,5 +1,5 @@
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/sections/Features.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/sections/Features.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/
 .Features_features__8upAF {
   padding: var(--space-120) 0;
@@ -9,12 +9,14 @@
 .Features_title__qMdDb {
   text-align: center;
   margin-bottom: var(--space-64);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .Features_grid__JptmF {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: var(--space-32);
   gap: var(--space-32);
 }
 
@@ -35,7 +37,8 @@
 .Features_image__PQl0p {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .Features_card__sn_WH h3 {
@@ -94,7 +97,7 @@
 
 } 
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/sections/Benefits.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/sections/Benefits.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/
 .Benefits_benefits__dTWrz {
   padding: var(--space-120) 0;
@@ -105,12 +108,14 @@
   text-align: left;
   margin-bottom: var(--space-64);
   max-width: 600px;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .Benefits_grid__GtObN {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: var(--space-32);
   gap: var(--space-32);
 }
 
@@ -211,7 +216,7 @@
   }
 } 
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/sections/FAQ.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/sections/FAQ.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/
 .FAQ_faq__rPNyU {
   padding: var(--space-120) 0;
@@ -229,6 +234,9 @@
 .FAQ_title__zuKnt {
   text-align: left;
   margin-bottom: 0;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .FAQ_grid__zlOh4 {
@@ -285,7 +293,7 @@
   }
 } 
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/sections/CTA.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/sections/CTA.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/
 .CTA_cta__Q0eAs {
   padding: var(--space-120) 0;
@@ -295,7 +303,6 @@
 .CTA_grid__On_Iu {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: var(--space-64);
   gap: var(--space-64);
   align-items: center;
 }
@@ -328,6 +335,10 @@
 .CTA_content__RZ9jt h2 {
   color: var(--text-primary);
   margin-bottom: var(--space-8);
+  margin-top: var(--space-16);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .CTA_content__RZ9jt p {
@@ -340,7 +351,6 @@
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: end;
-  grid-gap: var(--space-24);
   gap: var(--space-24);
   padding: var(--space-24);
   background-color: var(--background-02);
@@ -426,8 +436,58 @@
     padding: var(--space-48) 0;
   }
 } 
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/sections/Footer.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__Jcyx6 {
+  background-color: var(--background-01);
+  padding: 1.5rem 0;
+  color: #808080;
+}
+
+.Footer_container__YCx4X {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Footer_links__orGAx a {
+  color: #808080;
+  text-decoration: none;
+  margin-right: 2rem;
+  transition: color 0.2s ease;
+  font-size: 1rem;
+}
+
+.Footer_links__orGAx a:hover {
+  color: #ffffff;
+}
+
+.Footer_copyright__7t6i4 {
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .Footer_container__YCx4X {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .Footer_links__orGAx {
+    margin-bottom: 0.5rem;
+  }
+  
+  .Footer_links__orGAx a {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+} 
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/ui/Container.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/ui/Container.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/
 .Container_container__jbVMe {
   width: 100%;
@@ -442,7 +502,7 @@
   }
 } 
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/sections/Hero.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/sections/Hero.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/
 .Hero_hero__sbIHl {
   background-color: var(--background-01);
@@ -453,7 +513,7 @@
 .Hero_content__pgel1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: var(--space-96);
+  margin-left: 96px;
   gap: var(--space-96);
   align-items: center;
   position: relative;
@@ -514,7 +574,8 @@
 .Hero_image__cKxpA {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: var(--radius-md);
 }
 
@@ -582,7 +643,7 @@
   }
 } 
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/ui/Accordion.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/ui/Accordion.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/
 .Accordion_accordion__DE_P5 {
   background-color: var(--background-02);
