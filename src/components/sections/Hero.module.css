@@ -2,6 +2,7 @@
   background-color: var(--background-01);
   overflow: hidden;
   padding-top: var(--space-32);
+  position: relative;
 }
 
 .content {
@@ -11,6 +12,7 @@
   gap: var(--space-96);
   align-items: center;
   position: relative;
+  z-index: 2;
 }
 
 .text {

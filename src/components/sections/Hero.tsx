@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Container from '@/components/ui/Container'
 import styles from './Hero.module.css'
+import ParticleBackground from '@/components/ui/ParticleBackground'
 
 export default function Hero() {
   const scrollToDownload = () => {
@@ -14,6 +15,7 @@ export default function Hero() {
 
   return (
     <section className={styles.hero}>
+      <ParticleBackground />
       <Container>
         <div className={styles.content}>
           <div className={styles.text}>
