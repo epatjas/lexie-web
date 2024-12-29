@@ -54,4 +54,20 @@
 
 .button:active {
   transform: translateY(0);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  color: black;
 } 

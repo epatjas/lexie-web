@@ -21,8 +21,8 @@ export default function Header() {
         
         <Link href="/#cta" className={styles.button}>
           Kokeile ilmaiseksi
-          <div className="flex items-center justify-center w-6 h-6 bg-white rounded-full">
-            <ArrowRight className="w-4 h-4 text-black" strokeWidth={2} />
+          <div className={styles.iconWrapper}>
+            <ArrowRight className={styles.icon} strokeWidth={2} />
           </div>
         </Link>
       </div>

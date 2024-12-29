@@ -1,6 +1,5 @@
 import '@/styles/reset.css'
 import '@/styles/variables.css'
-import '@/styles/globals.css'
 import Header from '@/components/ui/Header'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
@@ -27,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fi">
-      <body className={`${inter.variable} ${inter.className} bg-[var(--background-01)]`}>
+      <body className={`${inter.variable} ${inter.className}`}>
         <Header />
         {children}
       </body>

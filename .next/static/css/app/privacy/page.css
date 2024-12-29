@@ -69,6 +69,7 @@
 .styles_layout__EBbXB {
   display: grid;
   grid-template-columns: 200px 1fr;
+  grid-gap: 96px;
   gap: 96px;
   padding: 56px 0;
   max-width: 1400px;
@@ -77,6 +78,7 @@
 }
 
 .styles_sidebar__lKpDT {
+  position: -webkit-sticky;
   position: sticky;
   top: 56px;
   height: -moz-fit-content;
