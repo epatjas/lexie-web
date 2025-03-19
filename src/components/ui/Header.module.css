@@ -70,4 +70,10 @@
   width: 16px;
   height: 16px;
   color: black;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 } 

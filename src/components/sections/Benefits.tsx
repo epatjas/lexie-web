@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Container from '@/components/ui/Container'
 import { 
@@ -9,20 +10,23 @@ import {
   PersonStanding 
 } from 'lucide-react'
 import styles from './Benefits.module.css'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Benefits() {
+  const { t } = useLanguage();
+  
   return (
     <section className={styles.benefits}>
       <Container>
-        <h2 className={styles.title}>Tukena jokaisen lapsen oppimisessa.</h2>
+        <h2 className={styles.title}>{t('supportingEveryChild')}</h2>
         <div className={styles.grid}>
           <div className={styles.card}>
             <div className={styles.icon}>
               <GraduationCap size={24} strokeWidth={1.5} />
             </div>
-            <h3>Henkilökohtainen oppimisen tuki</h3>
+            <h3>{t('personalLearningSupport')}</h3>
             <p>
-            Lexie toimii kuin henkilökohtainen apuopettaja. Se selittää vaikeat asiat ymmärrettävästi ja ohjaa askel askeleelta eteenpäin
+              {t('personalLearningDesc')}
             </p>
           </div>
 
@@ -30,9 +34,9 @@ export default function Benefits() {
             <div className={styles.icon}>
               <BookCheck size={24} strokeWidth={1.5} />
             </div>
-            <h3>Tehosta oppimistasi</h3>
+            <h3>{t('enhanceLearning')}</h3>
             <p>
-            Muistikortit ja harjoitustehtävät tekevät oppimisesta tehokkaampaa. Näet heti, mitkä asiat osaat jo hyvin ja mitä pitää vielä kerrata.
+              {t('enhanceLearningDesc')}
             </p>
           </div>
 
@@ -40,9 +44,9 @@ export default function Benefits() {
             <div className={styles.icon}>
               <ScanText size={24} strokeWidth={1.5} />
             </div>
-            <h3>Opi missä vain</h3>
+            <h3>{t('learnAnywhere')}</h3>
             <p>
-            Tallenna ja käytä sisältöä missä ja milloin haluat. Joustava oppiminen omaan tahtiisi.
+              {t('learnAnywhereDesc')}
             </p>
           </div>
 
@@ -50,9 +54,9 @@ export default function Benefits() {
             <div className={styles.icon}>
               <Languages size={24} strokeWidth={1.5} />
             </div>
-            <h3>Opiskele omalla kielelläsi</h3>
+            <h3>{t('learnInYourLanguage')}</h3>
             <p>
-            Lexie kääntää sisällön haluamallesi kielelle ja selittää vaikeat käsitteet selkeästi. Näin opit samalla sekä sisällön että kielen
+              {t('learnInYourLanguageDesc')}
             </p>
           </div>
 
@@ -60,9 +64,9 @@ export default function Benefits() {
             <div className={styles.icon}>
               <HeartHandshake size={24} strokeWidth={1.5} />
             </div>
-            <h3>Auttaa ymmärtämään opeteltavat asiat</h3>
+            <h3>{t('buildConfidence')}</h3>
             <p>
-            Lexie auttaa hahmottamaan keskeiset asiat ja selittää vaikeat kohdat ymmärrettävästi.
+              {t('buildConfidenceDesc')}
             </p>
           </div>
 
@@ -70,9 +74,9 @@ export default function Benefits() {
             <div className={styles.icon}>
               <PersonStanding size={24} strokeWidth={1.5} />
             </div>
-            <h3>Mukautuva oppimiskokemus</h3>
+            <h3>{t('adaptiveLearning')}</h3>
             <p>
-            Muokkaa fonttia, tekstin kokoa ja kuuntele sisältö ääneenluettuna. Näin löydät itsellesi sopivan tavan oppia
+              {t('adaptiveLearningDesc')}
             </p>
           </div>
         </div>

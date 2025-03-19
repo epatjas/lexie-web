@@ -2,10 +2,13 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight } from 'lucide-react'
 import styles from './Header.module.css'
+import LanguageSwitcher from './LanguageSwitcher'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Header() {
+  const { t } = useLanguage();
+  
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -19,12 +22,9 @@ export default function Header() {
           <span>LexieLearn</span>
         </Link>
         
-        <Link href="/#cta" className={styles.button}>
-          Kokeile ilmaiseksi
-          <div className={styles.iconWrapper}>
-            <ArrowRight className={styles.icon} strokeWidth={2} />
-          </div>
-        </Link>
+        <div className={styles.rightSection}>
+          <LanguageSwitcher />
+        </div>
       </div>
     </header>
   )

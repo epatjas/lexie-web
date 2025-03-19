@@ -3,6 +3,7 @@ import '@/styles/variables.css'
 import Header from '@/components/ui/Header'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
+import { LanguageProvider } from '@/contexts/LanguageContext'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -12,8 +13,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Lexie - Parempi tapa oppia',
-  description: 'Lexie auttaa sinua harjoittelemaan kokeisiin ja tekemään läksyjä.',
+  title: 'Lexie - A better way to learn',
+  description: 'Lexie helps you practice for exams and do your homework.',
   icons: {
     icon: '/images/favicon.png',
   },
@@ -25,10 +26,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fi">
+    <html lang="en">
       <body className={`${inter.variable} ${inter.className}`}>
-        <Header />
-        {children}
+        <LanguageProvider>
+          <Header />
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   )

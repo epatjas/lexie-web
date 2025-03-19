@@ -135,4 +135,70 @@
   .logo {
     width: 56px;
   }
+}
+
+.emailFormContainer {
+  margin-top: 32px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.emailForm {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.emailInput {
+  width: 100%;
+  padding: 20px 24px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1A1A1A;
+  color: var(--text-primary);
+  font-size: 18px;
+  height: 72px;
+}
+
+.emailInput::placeholder {
+  color: var(--text-secondary);
+}
+
+.emailButton {
+  position: absolute;
+  right: 8px;
+  padding: 16px 24px;
+  border-radius: 100px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.emailButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 640px) {
+  .emailForm {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .emailInput {
+    padding-right: 24px;
+  }
+  
+  .emailButton {
+    position: relative;
+    right: auto;
+    width: 100%;
+    margin-top: 8px;
+  }
 } 

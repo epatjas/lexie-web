@@ -131,6 +131,37 @@
 }.__variable_f95ffb {--font-inter: '__Inter_f95ffb', '__Inter_Fallback_f95ffb'
 }
 
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/ui/LanguageSwitcher.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.LanguageSwitcher_switcher__40Jl6 {
+  display: flex;
+  background-color: #1F1F1F;
+  border-radius: 100px;
+  padding: 4px;
+}
+
+.LanguageSwitcher_button__ogRPT {
+  background: none;
+  border: none;
+  border-radius: 100px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 12px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.LanguageSwitcher_button__ogRPT:hover {
+  color: var(--text-primary);
+}
+
+.LanguageSwitcher_button__ogRPT.LanguageSwitcher_active__wtXcC {
+  color: var(--background-01);
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+} 
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/ui/Header.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************/
@@ -207,6 +238,12 @@
   width: 16px;
   height: 16px;
   color: black;
+}
+
+.Header_rightSection__vy_gy {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 } 
 /*!******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/styles/reset.css ***!
@@ -242,7 +279,7 @@ input, button, textarea, select {
   \**********************************************************************************************************************************************************************************************************************************************************************/
 :root {
   /* Colors */
-  --background-01: hsl(240, 10%, 8%);
+  --background-01: #08090A;
   --background-02: hsl(240, 13%, 10%);
   --text-primary: hsl(240, 100%, 97%);
   --text-secondary: hsl(0, 0%, 58%);

@@ -15,12 +15,12 @@ export default function Accordion({ title, children }: AccordionProps) {
   return (
     <div className={`${styles.accordion} ${isOpen ? styles.open : ''}`}>
       <button 
-        className={styles.trigger} 
+        className={styles.trigger}
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
-        <span>{title}</span>
-        <ChevronDown size={20} className={styles.icon} />
+        {title}
+        <ChevronDown className={styles.icon} size={20} />
       </button>
       <div className={styles.content}>
         <div className={styles.inner}>

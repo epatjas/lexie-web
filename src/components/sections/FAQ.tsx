@@ -1,33 +1,63 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Container from '@/components/ui/Container'
-import Accordion from '@/components/ui/Accordion'
+import { ChevronDown } from 'lucide-react'
 import styles from './FAQ.module.css'
+import { useLanguage } from '@/contexts/LanguageContext'
+
+// Accordion component
+const Accordion = ({ title, children }: { title: string, children: React.ReactNode }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className={styles.accordion} style={{ backgroundColor: '#17181A', border: '1px solid #22242B' }}>
+      <button 
+        className={styles.accordionHeader} 
+        onClick={() => setIsOpen(!isOpen)}
+        style={{ backgroundColor: '#17181A' }}
+      >
+        <span style={{ color: 'var(--text-primary)' }}>{title}</span>
+        <ChevronDown 
+          size={20} 
+          style={{ 
+            transform: isOpen ? 'rotate(180deg)' : 'rotate(0)', 
+            transition: 'transform 0.3s ease',
+            color: 'var(--text-primary)'
+          }} 
+        />
+      </button>
+      {isOpen && (
+        <div className={styles.accordionContent} style={{ backgroundColor: '#17181A' }}>
+          {children}
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default function FAQ() {
+  const { t } = useLanguage();
+  
   return (
     <section className={styles.faq}>
       <Container>
         <div className={styles.container}>
-          <h2 className={styles.title}>Usein kysyttyä</h2>
+          <h2 className={styles.title}>{t('faq')}</h2>
           <div className={styles.grid}>
-            <Accordion title="Miten Lexie toimii?">
-            Lexie muuntaa kuvaamasi tekstin oppimismateriaaleiksi. Se luo tekoälyn avulla automaattisesti muistikortteja kertaamiseen ja tehtäviä osaamisen testaamiseen. Sovellus toimii täysin laitteellasi, joten tietosi pysyvät turvassa.
+            <Accordion title={t('howLexieWorks')}>
+              <p>{t('howLexieWorksAnswer')}</p>
             </Accordion>
-
-            <Accordion title="Mitä kaikkea Lexien avulla voi oppia?">
-            Lexie soveltuu kaikkeen oppimiseen. Se pilkkoo tiedot sopivan kokoisiin osiin ja auttaa sinua ymmärtämään asian syvällisesti.
+            <Accordion title={t('whatCanLearn')}>
+              <p>{t('whatCanLearnAnswer')}</p>
             </Accordion>
-
-            <Accordion title="Miksi LexieLearn on erilainen kuin muut oppimissovellukset?">
-            Lexie antaa sinun luoda oppimateriaalia juuri sinulle tärkeistä aiheista. Se mukautuu oppimistyyliisi ja auttaa ymmärtämään vaikeatkin asiat selkeästi.
+            <Accordion title={t('whyDifferent')}>
+              <p>{t('whyDifferentAnswer')}</p>
             </Accordion>
-
-            <Accordion title="Millä eri tavoilla voin käyttää sovellusta?">
-            Voit käyttää muistikortteja kertaamiseen, testata osaamistasi tehtävillä ja opiskella haluamallasi kielellä. Sisältöä voi myös kuunnella ääneenluettuna.
+            <Accordion title={t('howToUse')}>
+              <p>{t('howToUseAnswer')}</p>
             </Accordion>
-
-            <Accordion title="Säilyvätkö materiaalini Lexiessä?">
-            Kaikki luomasi materiaalit tallentuvat laitteellesi ja ovat aina käytettävissäsi. Voit palata niihin milloin tahansa ja jatkaa siitä, mihin jäit.
+            <Accordion title={t('materialsStored')}>
+              <p>{t('materialsStoredAnswer')}</p>
             </Accordion>
           </div>
         </div>

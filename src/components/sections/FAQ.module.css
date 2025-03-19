@@ -71,4 +71,29 @@
   .accordion .trigger {
     font-size: 17px;
   }
+}
+
+.accordion {
+  background-color: #17181A;
+  border: 1px solid #22242B;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-16);
+  overflow: hidden;
+}
+
+.accordionHeader {
+  padding: var(--space-24);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #17181A;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.accordionContent {
+  padding: 0 var(--space-24) var(--space-24);
+  background-color: #17181A;
 } 

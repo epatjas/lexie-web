@@ -1,19 +1,23 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Container from '@/components/ui/Container'
 import styles from './CTA.module.css'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function CTA() {
+  const { t } = useLanguage();
+  
   return (
-    <section id="cta" className={styles.cta}>
+    <section className={styles.cta} id="cta">
       <Container>
         <div className={styles.grid}>
           <div className={styles.imageWrapper}>
             <Image
               src="/images/4.png"
-              alt="Student using Lexie"
+              alt="Lexie app interface"
               width={600}
-              height={600}
+              height={800}
               className={styles.image}
             />
           </div>
@@ -21,24 +25,25 @@ export default function CTA() {
             <Image
               src="/images/logo.png"
               alt="Lexie logo"
-              width={80}
-              height={24}
+              width={133}
+              height={40}
               className={styles.logo}
             />
-            <h2>Tule testaamaan</h2>
+            <h2>{t('comeTest')}</h2>
             <p>
-            Etsimme testaajia Lexielle. Kerro meille miten käytät sovellusta ja millaiseen oppimiseen se soveltuu parhaiten. 
-            Palautteesi avulla kehitämme Lexiestä entistä paremman oppimisen työkalun. Tule mukaan kehittämään tulevaisuuden oppimisratkaisua.
+              {t('ctaDescription')}
             </p>
-            <div className={styles.download} id="download-app">
-              <p>Skannaa ja lataa LexieLearn</p>
-              <Image
-                src="/images/qr.png"
-                alt="QR code to download Lexie"
-                width={120}
-                height={120}
-                className={styles.qr}
-              />
+            <div className={styles.download} style={{ backgroundColor: '#17181A', border: '1px solid #22242B' }}>
+              <p>{t('scanDownload')}</p>
+              <div className={styles.qrContainer} style={{ backgroundColor: '#17181A', border: 'none' }}>
+                <Image
+                  src="/images/qr.png"
+                  alt="QR code"
+                  width={120}
+                  height={120}
+                  className={styles.qr}
+                />
+              </div>
             </div>
           </div>
         </div>

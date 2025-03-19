@@ -56,9 +56,9 @@
   align-items: end;
   gap: var(--space-24);
   padding: var(--space-24);
-  background-color: var(--background-02);
+  background-color: #17181A;
   border-radius: var(--radius-md);
-  border: 1px solid var(--stroke);
+  border: 1px solid #22242B;
   max-width: 480px;
   width: 100%;
   margin-top: var(--space-24);
@@ -71,6 +71,17 @@
   font-weight: 300;
   color: var(--text-primary);
   align-self: end;
+}
+
+.qrContainer {
+  background-color: #17181A;
+  border: 1px solid #22242B;
+  border-radius: var(--radius-md);
+  padding: var(--space-32);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-24);
 }
 
 @media (max-width: 1023px) {

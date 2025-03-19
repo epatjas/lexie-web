@@ -4,14 +4,10 @@ import Image from 'next/image'
 import Container from '@/components/ui/Container'
 import styles from './Hero.module.css'
 import ParticleBackground from '@/components/ui/ParticleBackground'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Hero() {
-  const scrollToDownload = () => {
-    const element = document.getElementById('download-app')
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
+  const { t } = useLanguage();
 
   return (
     <section className={styles.hero}>
@@ -26,17 +22,22 @@ export default function Hero() {
               height={40}
               className={styles.logo}
             />
-            <h1 className={styles.title}>Parempi tapa harjoitella.</h1>
+            <h1 className={styles.title}>{t('betterWayToLearn')}</h1>
             <p className={styles.ingress}>
-            Lexie muuntaa minkä tahansa painetun tekstin vuorovaikutteiseksi oppimiskokemukseksi. Luo automaattisesti muistikortteja kertaamiseen ja testaa osaamistasi interaktiivisilla tehtävillä.
+              {t('heroDescription')}
             </p>
-            <button 
-              className={styles.button}
-              onClick={scrollToDownload}
-              aria-label="Lataa sovellus"
-            >
-              Kokeile ilmaiseksi
-            </button>
+            <div className={styles.emailFormContainer}>
+              <div className={styles.emailForm}>
+                <input 
+                  type="email" 
+                  placeholder={t('insertEmail')} 
+                  className={styles.emailInput}
+                />
+                <button className={styles.emailButton}>
+                  {t('getEarlyAccess')}
+                </button>
+              </div>
+            </div>
           </div>
           <div className={styles.imageWrapper}>
             <Image

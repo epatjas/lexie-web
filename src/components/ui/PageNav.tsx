@@ -2,8 +2,10 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import styles from './PageNav.module.css'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 const PageNav = () => {
+  const { t } = useLanguage()
   const pathname = usePathname()
 
   return (
@@ -12,13 +14,13 @@ const PageNav = () => {
         href="/terms" 
         className={`${styles.link} ${pathname === '/terms' ? styles.active : ''}`}
       >
-        Käyttöehdot
+        {t('termsOfService')}
       </Link>
       <Link 
         href="/privacy" 
         className={`${styles.link} ${pathname === '/privacy' ? styles.active : ''}`}
       >
-        Tietosuoja
+        {t('privacyPolicy')}
       </Link>
     </nav>
   )

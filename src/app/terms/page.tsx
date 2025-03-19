@@ -1,9 +1,13 @@
+'use client'
 import Container from '@/components/ui/Container'
 import Footer from '@/components/sections/Footer'
 import PageNav from '@/components/ui/PageNav'
 import styles from '../privacy/styles.module.css'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Terms() {
+  const { t, language } = useLanguage();
+  
   return (
     <main>
       <Container>
@@ -12,8 +16,8 @@ export default function Terms() {
             <PageNav />
           </aside>
           <div className={styles.content}>
-            <h1>LexieLearn-sovelluksen käyttöehdot</h1>
-            <p>VOIMAANTULOPÄIVÄ: 29.12.2024</p>
+            <h1>{language === 'fi' ? 'LexieLearn-sovelluksen käyttöehdot' : 'LexieLearn App Terms of Service'}</h1>
+            <p>{language === 'fi' ? 'PÄIVITETTY: 29.12.2024' : 'UPDATED: 12/29/2024'}</p>
 
             <section>
               <h2>1. Yleistä</h2>
