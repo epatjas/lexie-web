@@ -69,26 +69,20 @@
 .PageNav_nav__Q39_N {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .PageNav_link__KjUOb {
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 1rem;
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: all 0.2s ease;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.PageNav_link__KjUOb:hover {
+.PageNav_activeLink__U_cfL {
   color: var(--text-primary);
-  background-color: var(--background-02);
-}
-
-.PageNav_link__KjUOb.PageNav_active__AVjop {
-  color: var(--text-primary);
-  background-color: var(--background-02);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 } 
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/privacy/styles.module.css ***!
@@ -98,7 +92,7 @@
   grid-template-columns: 200px 1fr;
   grid-gap: 96px;
   gap: 96px;
-  padding: 56px 0;
+  padding: 56px 24px;
   max-width: 1400px;
   margin: 0 auto;
   background-color: var(--background-01);
@@ -113,10 +107,8 @@
 }
 
 .styles_content__eIa_y {
-  padding: 0;
   color: var(--text-primary);
   max-width: 720px;
-  margin: 0;
 }
 
 .styles_content__eIa_y h1 {
@@ -183,7 +175,7 @@
 }
 
 .styles_content__eIa_y ul li::before {
-  content: "-";
+  content: "•";
   position: absolute;
   left: 0;
   color: var(--text-secondary);
@@ -192,11 +184,32 @@
 @media (max-width: 768px) {
   .styles_layout__EBbXB {
     grid-template-columns: 1fr;
-    gap: 32px;
-    padding: 32px 16px;
+    gap: 24px;
+    padding: 24px 16px;
   }
   
+  .styles_sidebar__lKpDT {
+    position: relative;
+    top: 0;
+  }
+
   .styles_content__eIa_y h1 {
-    font-size: 2rem;
+    font-size: 32px;
+  }
+
+  .styles_content__eIa_y h2 {
+    font-size: 18px;
+  }
+
+  .styles_content__eIa_y p,
+  .styles_content__eIa_y ul li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .styles_layout__EBbXB {
+    padding: 16px 12px;
+    gap: 16px;
   }
 } 

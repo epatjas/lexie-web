@@ -1,24 +1,18 @@
 .nav {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .link {
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 1rem;
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: all 0.2s ease;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.link:hover {
+.activeLink {
   color: var(--text-primary);
-  background-color: var(--background-02);
-}
-
-.link.active {
-  color: var(--text-primary);
-  background-color: var(--background-02);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 } 
