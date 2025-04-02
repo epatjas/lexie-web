@@ -572,6 +572,8 @@
   overflow: hidden;
   padding-top: var(--space-32);
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .Hero_content__pgel1 {
@@ -826,4 +828,16 @@
     box-shadow: none;
     opacity: 0.9;
   }
+}
+
+.Hero_particleContainer__SPw_x {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
 } 
