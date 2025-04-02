@@ -653,6 +653,8 @@
   .Hero_content__pgel1 {
     grid-template-columns: 1fr;
     gap: var(--space-48);
+    margin-left: var(--space-24);
+    margin-right: var(--space-24);
   }
 
   .Hero_text__cLcsN {
@@ -695,8 +697,13 @@
 }
 
 @media (max-width: 640px) {
+  .Hero_content__pgel1 {
+    margin-left: var(--space-16);
+    margin-right: var(--space-16);
+  }
+
   .Hero_title__IAc43 {
-    font-size: 44px;
+    font-size: 36px;
   }
 
   .Hero_text__cLcsN {
@@ -705,6 +712,42 @@
 
   .Hero_logo__H7XJO {
     width: 56px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Hero_title__IAc43 {
+    font-size: 32px;
+  }
+  
+  .Hero_ingress__hE5Ra {
+    font-size: 16px;
+  }
+  
+  .Hero_button__hdTRA {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .Hero_emailButton__Uv2ge {
+    white-space: normal;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+  }
+  
+  @media (hover: none) {
+    .Hero_button__hdTRA:hover,
+    .Hero_emailButton__Uv2ge:hover {
+      transform: none;
+      box-shadow: none;
+    }
   }
 }
 
@@ -764,6 +807,9 @@
   
   .Hero_emailInput__M8y7L {
     padding-right: 24px;
+    height: 56px;
+    padding: 14px 20px;
+    font-size: 16px;
   }
   
   .Hero_emailButton__Uv2ge {
@@ -771,5 +817,13 @@
     right: auto;
     width: 100%;
     margin-top: 8px;
+    height: 48px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .Hero_emailButton__Uv2ge:hover {
+    transform: none;
+    box-shadow: none;
+    opacity: 0.9;
   }
 } 
