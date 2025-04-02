@@ -72,7 +72,7 @@ export const translations = {
 Interlinear Oy
 Albertinkatu 26-28
 elina.patjas@interlinear.tech
-[Y-tunnus]
+Y-tunnus: 3523811-5
 
 2. Tärkeimmät periaatteet
 
@@ -313,7 +313,7 @@ Kannustamme käyttäjiä:
 • Interlinear Oy
 • Albertinkatu 26-28
 • elina.patjas@interlinear.tech
-• [Y-tunnus]`
+• Y-tunnus: 3523811-5`
     },
 
     // Common sections for both pages
@@ -321,7 +321,7 @@ Kannustamme käyttäjiä:
       companyName: "Interlinear OY",
       address: "Albertinkatu 26-28",
       email: "elina.patjas@interlinear.tech",
-      businessId: "3132712-4"
+      businessId: "3523811-5"
     }
   },
   en: {
@@ -397,7 +397,7 @@ Kannustamme käyttäjiä:
 Interlinear Oy
 Albertinkatu 26-28
 elina.patjas@interlinear.tech
-[Business ID]
+Business ID: 3523811-5
 
 2. Key Principles
 
@@ -492,7 +492,7 @@ elina.patjas@interlinear.tech
 +35850 408 6722  
 Interlinear Oy  
 Albertinkatu 26-28  
-[Business ID]`
+Business ID: 3523811-5`
     },
 
     // Terms Page
@@ -649,7 +649,7 @@ We encourage users to:
 • Interlinear Oy
 • Albertinkatu 26-28
 • elina.patjas@interlinear.tech
-• [Business ID]`
+• Business ID: 3523811-5`
     },
 
     // Common sections for both pages
@@ -657,7 +657,7 @@ We encourage users to:
       companyName: "Interlinear OY",
       address: "Albertinkatu 26-28",
       email: "elina.patjas@interlinear.tech",
-      businessId: "3132712-4"
+      businessId: "3523811-5"
     }
   }
 };
