@@ -89,7 +89,12 @@
   }
   .title {
     font-size: 32px;
-    margin-bottom: var(--space-32);
+    margin-bottom: var(--space-16);
+  }
+
+  .ingress {
+    font-size: 18px;
+    margin-bottom: var(--space-24);
   }
 
   .card h3 {

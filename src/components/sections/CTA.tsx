@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Container from '@/components/ui/Container'
 import styles from './CTA.module.css'
@@ -7,6 +7,49 @@ import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function CTA() {
   const { t } = useLanguage();
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
+  
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError('');
+    
+    try {
+      // Simple email validation
+      if (!email || !/\S+@\S+\.\S+/.test(email)) {
+        throw new Error(t('formInvalidEmail'));
+      }
+
+      // Using fetch to submit to Formspree
+      const response = await fetch('https://formspree.io/f/xjkyarvo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+          email,
+          _replyto: email,
+          _subject: 'New Lexie early access signup',
+          message: `Please add ${email} to the early access list.`
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(t('formSubmitError'));
+      }
+      
+      setIsSubmitted(true);
+      setEmail('');
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setError(error instanceof Error ? error.message : t('formSubmitError'));
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   
   return (
     <section className={styles.cta} id="cta">
@@ -33,17 +76,31 @@ export default function CTA() {
             <p>
               {t('ctaDescription')}
             </p>
-            <div className={styles.download} style={{ backgroundColor: '#17181A', border: '1px solid #22242B' }}>
-              <p>{t('scanDownload')}</p>
-              <div className={styles.qrContainer} style={{ backgroundColor: '#17181A', border: 'none' }}>
-                <Image
-                  src="/images/qr.png"
-                  alt="QR code"
-                  width={120}
-                  height={120}
-                  className={styles.qr}
-                />
-              </div>
+            <div className={styles.emailFormContainer}>
+              {!isSubmitted ? (
+                <form onSubmit={handleSubmit} className={styles.emailForm}>
+                  <input 
+                    type="email" 
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder={t('insertEmail')} 
+                    className={styles.emailInput}
+                    required
+                  />
+                  <button 
+                    type="submit"
+                    disabled={isSubmitting}
+                    className={styles.emailButton}
+                  >
+                    {isSubmitting ? '...' : t('getEarlyAccess')}
+                  </button>
+                </form>
+              ) : (
+                <div className={styles.successMessage}>
+                  <p>{t('formSubmitSuccess')}</p>
+                </div>
+              )}
+              {error && <p className={styles.errorMessage}>{error}</p>}
             </div>
           </div>
         </div>

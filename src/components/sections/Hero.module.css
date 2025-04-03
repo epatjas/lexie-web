@@ -183,79 +183,75 @@
 }
 
 .emailFormContainer {
-  margin-top: 32px;
+  margin-top: 24px;
   width: 100%;
   max-width: 450px;
 }
 
 .emailForm {
   position: relative;
-  width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  gap: 8px;
+  width: 100%;
+  background-color: var(--background-02);
+  border-radius: var(--radius-full, 9999px);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  padding: 6px;
 }
 
 .emailInput {
+  flex: 1;
   width: 100%;
-  padding: 20px 24px;
-  border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: #1A1A1A;
+  background-color: transparent;
+  border: none;
   color: var(--text-primary);
-  font-size: 18px;
-  height: 72px;
+  font-size: 16px;
+  padding: 12px 16px 12px 20px;
+  height: auto;
 }
 
 .emailInput::placeholder {
-  color: var(--text-secondary);
+  color: var(--text-tertiary, rgba(255, 255, 255, 0.5));
 }
 
 .emailButton {
-  position: absolute;
-  right: 8px;
-  padding: 16px 24px;
-  border-radius: 100px;
-  border: none;
   background-color: white;
-  color: black;
-  font-size: 18px;
+  border: none;
+  border-radius: var(--radius-full, 9999px);
+  color: var(--text-dark, #111827);
   font-weight: 500;
+  font-size: 16px;
+  padding: 12px 24px;
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
 }
 
 .emailButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f3f4f6;
 }
 
-@media (max-width: 640px) {
+.emailButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background-color: #e5e7eb;
+}
+
+@media (max-width: 480px) {
   .emailForm {
-    flex-direction: column;
-    gap: 16px;
+    padding: 4px;
   }
   
   .emailInput {
-    padding-right: 24px;
-    height: 56px;
-    padding: 14px 20px;
-    font-size: 16px;
+    font-size: 15px;
+    padding-left: 16px;
   }
   
   .emailButton {
-    position: relative;
-    right: auto;
-    width: 100%;
-    margin-top: 8px;
-    height: 48px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .emailButton:hover {
-    transform: none;
-    box-shadow: none;
-    opacity: 0.9;
+    font-size: 14px;
+    padding: 10px 16px;
   }
 }
 
@@ -269,4 +265,28 @@
   height: 100%;
   z-index: 1;
   overflow: hidden;
+}
+
+.errorMessage {
+  color: #ef4444;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.successMessage {
+  margin-top: 12px;
+  padding: 16px 24px;
+  background-color: #121D19;
+  border: 1px solid #72CDA8;
+  border-radius: 100px;
+  color: var(--text-primary);
+  text-align: center;
+  width: 100%;
+}
+
+.successMessage p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
 } 

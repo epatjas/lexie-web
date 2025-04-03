@@ -1,3 +1,8 @@
+/* ===================
+   BASE STYLES (ALL SCREEN SIZES)
+   =================== */
+
+/* Container Styles */
 .faq {
   padding: var(--space-120) 0;
   background-color: var(--background-01);
@@ -22,11 +27,78 @@
 .grid {
   display: flex;
   flex-direction: column;
-  gap: var(--space-16);
+  gap: var(--space-8);
 }
 
-/* Desktop */
+/* Accordion Styles */
+.accordion {
+  background-color: #17181A;
+  border: 1px solid #22242B;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-16);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion:hover {
+  background-color: #1c1d20;
+  border-color: #2a2c35;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
+}
+
+.accordionHeader {
+  padding: var(--space-24);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  transition: all 0.2s ease;
+  font-size: 16px; /* Base font size for the header */
+}
+
+.accordion:hover .accordionHeader {
+  color: var(--text-primary);
+}
+
+.accordionHeader svg {
+  transition: transform 0.3s ease;
+  color: var(--text-secondary) !important;
+}
+
+.accordionContent {
+  padding: 0 var(--space-24) var(--space-24);
+  background-color: #17181A;
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Formatted Text Styles */
+.formattedText p {
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.formattedText p:last-child {
+  margin-bottom: 0;
+}
+
+.formattedText br {
+  display: block;
+  content: "";
+  margin-top: 0.5rem;
+}
+
+/* ===================
+   DESKTOP STYLES (1200px and above)
+   =================== */
 @media (min-width: 1200px) {
+  /* Container Styles */
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -35,26 +107,58 @@
   }
 }
 
-/* Mobile */
-@media (max-width: 1023px) {
-  .title {
-    font-size: 36px;
+/* ===================
+   DESKTOP/TABLET STYLES (1024px and above)
+   =================== */
+@media (min-width: 1024px) {
+  /* Accordion Content Styles */
+  .accordionContent {
+    font-size: 15px;
+    line-height: 1.5;
   }
-
-  .accordion .trigger {
-    font-size: 18px;
-  }
-
-  .accordion .content p {
-    font-size: 16px;
-  }
-
-  .faq {
-    padding: var(--space-64) 0;
+  
+  .formattedText p {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
   }
 }
 
+/* ===================
+   TABLET STYLES (1023px and below)
+   =================== */
+@media (max-width: 1023px) {
+  /* Container Styles */
+  .title {
+    font-size: 36px;
+  }
+  
+  .faq {
+    padding: var(--space-64) 0;
+  }
+  
+  /* Accordion Styles */
+  .accordionHeader {
+    font-size: 15px;
+  }
+  
+  /* Accordion Content Styles - EDIT THIS SECTION FOR MOBILE CONTENT */
+  .accordionContent {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .formattedText p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+  }
+}
+
+/* ===================
+   MOBILE STYLES (640px and below)
+   =================== */
 @media (max-width: 640px) {
+  /* Container Styles */
   .faq {
     padding: var(--space-48) 0;
   }
@@ -64,36 +168,21 @@
   }
 
   .title {
-    text-align: center;
-    font-size: 32px;
+    text-align: left;
+    font-size: 28px;
   }
-
-  .accordion .trigger {
-    font-size: 17px;
+  
+  /* Accordion Styles - EDIT HERE FOR MOBILE HEADER */
+  .accordionHeader {
+    font-size: 16px;
   }
-}
-
-.accordion {
-  background-color: #17181A;
-  border: 1px solid #22242B;
-  border-radius: var(--radius-sm);
-  margin-bottom: var(--space-16);
-  overflow: hidden;
-}
-
-.accordionHeader {
-  padding: var(--space-24);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  background-color: #17181A;
-  border: none;
-  width: 100%;
-  text-align: left;
-}
-
-.accordionContent {
-  padding: 0 var(--space-24) var(--space-24);
-  background-color: #17181A;
+  
+  /* You can add mobile-specific styles for accordion content here */
+  .accordionContent {
+    /* Mobile-specific styles for accordion content */
+  }
+  
+  .formattedText p {
+    /* Mobile-specific styles for formatted text */
+  }
 } 

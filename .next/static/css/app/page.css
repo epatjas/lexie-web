@@ -289,10 +289,93 @@
   .CTA_cta__Q0eAs {
     padding: var(--space-48) 0;
   }
+}
+
+/* Email form styles - matching the Hero component style */
+.CTA_emailFormContainer__k9ZwN {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.CTA_emailForm__YIAUf {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-02);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  padding: 6px;
+  width: 100%;
+}
+
+.CTA_emailInput__cA5Xv {
+  flex: 1 1;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  color: var(--text-primary);
+  padding: 12px;
+  width: 100%;
+}
+
+.CTA_emailInput__cA5Xv::placeholder {
+  color: var(--text-tertiary);
+}
+
+.CTA_emailButton__W8LwQ {
+  background-color: white;
+  border: none;
+  color: var(--text-dark, #111827);
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.CTA_emailButton__W8LwQ:hover {
+  background-color: #f3f4f6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.CTA_emailButton__W8LwQ:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background-color: #e5e7eb;
+}
+
+.CTA_successMessage___Ki96 {
+  margin-top: 12px;
+  padding: 16px 24px;
+  background-color: #121D19;
+  border: 1px solid #72CDA8;
+  border-radius: 100px;
+  color: var(--text-primary);
+  text-align: center;
+  width: 100%;
+}
+
+.CTA_successMessage___Ki96 p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.CTA_errorMessage__KtGoC {
+  color: #ef4444;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: left;
 } 
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/sections/FAQ.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/
+/* ===================
+   BASE STYLES (ALL SCREEN SIZES)
+   =================== */
+
+/* Container Styles */
 .FAQ_faq__rPNyU {
   padding: var(--space-120) 0;
   background-color: var(--background-01);
@@ -317,11 +400,78 @@
 .FAQ_grid__zlOh4 {
   display: flex;
   flex-direction: column;
-  gap: var(--space-16);
+  gap: var(--space-8);
 }
 
-/* Desktop */
+/* Accordion Styles */
+.FAQ_accordion__9r1pK {
+  background-color: #17181A;
+  border: 1px solid #22242B;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-16);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.FAQ_accordion__9r1pK:hover {
+  background-color: #1c1d20;
+  border-color: #2a2c35;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
+}
+
+.FAQ_accordionHeader__kLOPk {
+  padding: var(--space-24);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  transition: all 0.2s ease;
+  font-size: 16px; /* Base font size for the header */
+}
+
+.FAQ_accordion__9r1pK:hover .FAQ_accordionHeader__kLOPk {
+  color: var(--text-primary);
+}
+
+.FAQ_accordionHeader__kLOPk svg {
+  transition: transform 0.3s ease;
+  color: var(--text-secondary) !important;
+}
+
+.FAQ_accordionContent__6VGNe {
+  padding: 0 var(--space-24) var(--space-24);
+  background-color: #17181A;
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Formatted Text Styles */
+.FAQ_formattedText__0gyc_ p {
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.FAQ_formattedText__0gyc_ p:last-child {
+  margin-bottom: 0;
+}
+
+.FAQ_formattedText__0gyc_ br {
+  display: block;
+  content: "";
+  margin-top: 0.5rem;
+}
+
+/* ===================
+   DESKTOP STYLES (1200px and above)
+   =================== */
 @media (min-width: 1200px) {
+  /* Container Styles */
   .FAQ_container__lURr4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -330,26 +480,58 @@
   }
 }
 
-/* Mobile */
-@media (max-width: 1023px) {
-  .FAQ_title__zuKnt {
-    font-size: 36px;
+/* ===================
+   DESKTOP/TABLET STYLES (1024px and above)
+   =================== */
+@media (min-width: 1024px) {
+  /* Accordion Content Styles */
+  .FAQ_accordionContent__6VGNe {
+    font-size: 15px;
+    line-height: 1.5;
   }
-
-  .FAQ_accordion__9r1pK .FAQ_trigger__gjvdP {
-    font-size: 18px;
-  }
-
-  .FAQ_accordion__9r1pK .FAQ_content__qDPcm p {
-    font-size: 16px;
-  }
-
-  .FAQ_faq__rPNyU {
-    padding: var(--space-64) 0;
+  
+  .FAQ_formattedText__0gyc_ p {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
   }
 }
 
+/* ===================
+   TABLET STYLES (1023px and below)
+   =================== */
+@media (max-width: 1023px) {
+  /* Container Styles */
+  .FAQ_title__zuKnt {
+    font-size: 36px;
+  }
+  
+  .FAQ_faq__rPNyU {
+    padding: var(--space-64) 0;
+  }
+  
+  /* Accordion Styles */
+  .FAQ_accordionHeader__kLOPk {
+    font-size: 15px;
+  }
+  
+  /* Accordion Content Styles - EDIT THIS SECTION FOR MOBILE CONTENT */
+  .FAQ_accordionContent__6VGNe {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .FAQ_formattedText__0gyc_ p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+  }
+}
+
+/* ===================
+   MOBILE STYLES (640px and below)
+   =================== */
 @media (max-width: 640px) {
+  /* Container Styles */
   .FAQ_faq__rPNyU {
     padding: var(--space-48) 0;
   }
@@ -359,38 +541,23 @@
   }
 
   .FAQ_title__zuKnt {
-    text-align: center;
-    font-size: 32px;
+    text-align: left;
+    font-size: 28px;
   }
-
-  .FAQ_accordion__9r1pK .FAQ_trigger__gjvdP {
-    font-size: 17px;
+  
+  /* Accordion Styles - EDIT HERE FOR MOBILE HEADER */
+  .FAQ_accordionHeader__kLOPk {
+    font-size: 16px;
   }
-}
-
-.FAQ_accordion__9r1pK {
-  background-color: #17181A;
-  border: 1px solid #22242B;
-  border-radius: var(--radius-sm);
-  margin-bottom: var(--space-16);
-  overflow: hidden;
-}
-
-.FAQ_accordionHeader__kLOPk {
-  padding: var(--space-24);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  background-color: #17181A;
-  border: none;
-  width: 100%;
-  text-align: left;
-}
-
-.FAQ_accordionContent__6VGNe {
-  padding: 0 var(--space-24) var(--space-24);
-  background-color: #17181A;
+  
+  /* You can add mobile-specific styles for accordion content here */
+  .FAQ_accordionContent__6VGNe {
+    /* Mobile-specific styles for accordion content */
+  }
+  
+  .FAQ_formattedText__0gyc_ p {
+    /* Mobile-specific styles for formatted text */
+  }
 } 
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/sections/Features.module.css ***!
@@ -487,7 +654,12 @@
   }
   .Features_title__qMdDb {
     font-size: 32px;
-    margin-bottom: var(--space-32);
+    margin-bottom: var(--space-16);
+  }
+
+  .Features_ingress__lrKXp {
+    font-size: 18px;
+    margin-bottom: var(--space-24);
   }
 
   .Features_card__sn_WH h3 {
@@ -754,79 +926,75 @@
 }
 
 .Hero_emailFormContainer__Mmnx9 {
-  margin-top: 32px;
+  margin-top: 24px;
   width: 100%;
   max-width: 450px;
 }
 
 .Hero_emailForm__3ptjQ {
   position: relative;
-  width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  gap: 8px;
+  width: 100%;
+  background-color: var(--background-02);
+  border-radius: var(--radius-full, 9999px);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  padding: 6px;
 }
 
 .Hero_emailInput__M8y7L {
+  flex: 1 1;
   width: 100%;
-  padding: 20px 24px;
-  border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: #1A1A1A;
+  background-color: transparent;
+  border: none;
   color: var(--text-primary);
-  font-size: 18px;
-  height: 72px;
+  font-size: 16px;
+  padding: 12px 16px 12px 20px;
+  height: auto;
 }
 
 .Hero_emailInput__M8y7L::placeholder {
-  color: var(--text-secondary);
+  color: var(--text-tertiary, rgba(255, 255, 255, 0.5));
 }
 
 .Hero_emailButton__Uv2ge {
-  position: absolute;
-  right: 8px;
-  padding: 16px 24px;
-  border-radius: 100px;
-  border: none;
   background-color: white;
-  color: black;
-  font-size: 18px;
+  border: none;
+  border-radius: var(--radius-full, 9999px);
+  color: var(--text-dark, #111827);
   font-weight: 500;
+  font-size: 16px;
+  padding: 12px 24px;
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
 }
 
 .Hero_emailButton__Uv2ge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f3f4f6;
 }
 
-@media (max-width: 640px) {
+.Hero_emailButton__Uv2ge:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background-color: #e5e7eb;
+}
+
+@media (max-width: 480px) {
   .Hero_emailForm__3ptjQ {
-    flex-direction: column;
-    gap: 16px;
+    padding: 4px;
   }
   
   .Hero_emailInput__M8y7L {
-    padding-right: 24px;
-    height: 56px;
-    padding: 14px 20px;
-    font-size: 16px;
+    font-size: 15px;
+    padding-left: 16px;
   }
   
   .Hero_emailButton__Uv2ge {
-    position: relative;
-    right: auto;
-    width: 100%;
-    margin-top: 8px;
-    height: 48px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .Hero_emailButton__Uv2ge:hover {
-    transform: none;
-    box-shadow: none;
-    opacity: 0.9;
+    font-size: 14px;
+    padding: 10px 16px;
   }
 }
 
@@ -840,4 +1008,28 @@
   height: 100%;
   z-index: 1;
   overflow: hidden;
+}
+
+.Hero_errorMessage__e5cGM {
+  color: #ef4444;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.Hero_successMessage__ahpNA {
+  margin-top: 12px;
+  padding: 16px 24px;
+  background-color: #121D19;
+  border: 1px solid #72CDA8;
+  border-radius: 100px;
+  color: var(--text-primary);
+  text-align: center;
+  width: 100%;
+}
+
+.Hero_successMessage__ahpNA p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
 } 

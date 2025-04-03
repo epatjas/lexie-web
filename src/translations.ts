@@ -10,22 +10,22 @@ export const translations = {
     
     // Features
     takePicture: "Ota kuva. Lexie hoitaa loput.",
-    featuresIngress: "Skannaa mikä tahansa teksti, ja muuta se harjoittelumateriaaliksi.",
-    adaptiveText: "Mukautuu sinun tapaasi oppia",
-    adaptiveTextDesc: "Lue, kuuntele tai muuta tekstin ulkoasua. Valitse juuri sinulle sopiva tapa opiskella.",
+    featuresIngress: "Skannaa mitä tahansa tekstiä, ja muuta se harjoittelumateriaaliksi.",
+    adaptiveText: "Aina saatavilla oleva apu",
+    adaptiveTextDesc: "Ota kuva kotitehtävästäsi ja saat apua saman tien. Lexie ei anna valmiita vastauksia vaan ohjaa sinut oivaltamaan itse.",
     effectiveWay: "Tehokas tapa oppia keskeisiä käsitteitä",
     effectiveWayDesc: "Muistikortit pilkkovat laajat kokonaisuudet helposti opittaviin osiin. Kertaamalla korttien avulla opit tärkeitä käsitteitä.",
     testYourKnowledge: "Harjoitustehtävien avulla voit kerrata ja testata osaamistasi",
-    testYourKnowledgeDesc: "Monipuoliset tehtävät auttavat kertaamaan opittua ja näyttävät, mitkä asiat osaat jo hyvin.",
+    testYourKnowledgeDesc: "Monipuoliset tehtävät auttavat kertaamaan opittua. Näet heti mitkä asiat osaat jo hyvin, ja mitkä vaativat vielä harjoittelua.",
     
     // Benefits
     supportingEveryChild: "Tukena jokaisen lapsen oppimisessa",
-    personalLearningSupport: "Apu, joka on aina saatavilla",
-    personalLearningDesc: "Lexie tukee kotitehtävien teossa silloinkin kun kukaan ei ehdi neuvoa.",
+    personalLearningSupport: "Tukea silloin kun sitä tarvitset",
+    personalLearningDesc: "Lexie auttaa oppimaan silloinkin, kun kukaan muu ei ehdi tai osaa neuvoa. Saat harjoitella omassa tahdissasi.",
     enhanceLearning: "Helpottaa kokeisiin valmistautumista",
     enhanceLearningDesc: "Lexie auttaa ymmärtämään opeteltavat asiat ja kertaamaan niitä tehokkaasti.",
-    learnAnywhere: "Materiaalit kulkevat mukana",
-    learnAnywhereDesc: "Ota kuva kerran, käytä missä tahansa. Opiskelumateriaalit kulkevat aina taskussasi.",
+    learnAnywhere: "Materiaalit kulkevat mukanasi",
+    learnAnywhereDesc: "Ota kuva kerran, harjoittele missä ja milloin tahansa. Harjoittelumateriaalit kulkevat aina taskussasi.",
     learnInYourLanguage: "Opiskele omalla kielelläsi",
     learnInYourLanguageDesc: "Käännä sanat ja selitykset sille kielelle, jota ymmärrät parhaiten.",
     buildConfidence: "Opiskele itsenäisesti omaan tahtiin",
@@ -36,19 +36,23 @@ export const translations = {
     // FAQ
     faq: "Usein kysyttyä",
     howLexieWorks: "Miten Lexie toimii?",
-    howLexieWorksAnswer: "Lexie muuntaa kuvaamasi tekstin harjoitusmateriaaleiksi. Se luo tekoälyn avulla automaattisesti muistikortteja kertaamiseen ja tehtäviä osaamisen testaamiseen. Sovellus toimii laitteellasi ja tietosi pysyvät turvassa.",
-    whatCanLearn: "Mitä kaikkea Lexien avulla voi oppia?",
-    whatCanLearnAnswer: "Lexie soveltuu kaikkeen oppimiseen. Se pilkkoo tiedot sopivan kokoisiin osiin ja auttaa sinua ymmärtämään asian syvällisesti.",
+    howLexieWorksAnswer: "Lexie tunnistaa opiskelumateriaalisi kuvasta. Kun otat valokuvan, teknologiamme lukee tekstin, analysoi sisällön rakenteen ja tunnistaa, millainen oppimismateriaali on kyseessä.\n\nJärjestelmä pilkkoo sisällön keskeisiin käsitteisiin ja niiden välisiin suhteisiin. Sanastoista se poimii termit ja määritelmät. Historiasta se tunnistaa tapahtumat ja päivämäärät. Luonnontieteistä se erottaa käsitteet ja selitykset.\n\nTämä käsitelty tieto muunnetaan erilaisiksi harjoitusmuodoiksi:\n\n• Kyselyiksi, jotka testaavat ymmärtämistä eri tasoilla\n• Muistikorteiksi nopeaa kertausta varten\n• Äänitiedostoiksi oikeaa ääntämistä varten\n• Yhteenvedoiksi, jotka korostavat pääkohtia\n\nKoko prosessi kestää vain sekunteja. Sinun ei tarvitse kirjoittaa tai muotoilla sisältöä itse.",
+    whatCanLearn: "Mitkä oppiaineet toimivat parhaiten Lexien kanssa?",
+    whatCanLearnAnswer: "Lexie toimii parhaiten äidinkielen, yhteiskuntatieteiden, luonnontieteiden ja vieraiden kielten opiskelussa - eli oppiaineissa, joissa käytetään tekstipohjaisia materiaaleja.\n\nTällä hetkellä Lexie ei vielä käsittele hyvin matemaattisia yhtälöitä ja kaavoja, vaikka se tunnistaakin matemaattisia käsitteitä. Työskentelemme tämän parantamiseksi.\n\nMyös vahvasti visuaaliset aineet kuten taide tai musiikkiteoria erityismerkintöineen eivät välttämättä toimi parhaalla mahdollisella tavalla. Selkeästi jäsennellyt tekstimateriaalit toimivat parhaiten.",
     whyDifferent: "Miksi LexieLearn on erilainen kuin muut oppimissovellukset?",
-    whyDifferentAnswer: "Lexie antaa sinun luoda oppimateriaalia juuri sinulle tärkeistä aiheista. Se mukautuu oppimistyyliisi ja auttaa ymmärtämään vaikeatkin asiat selkeästi.",
-    howToUse: "Millä eri tavoilla voin käyttää sovellusta?",
-    howToUseAnswer: "Voit käyttää muistikortteja kertaamiseen, testata osaamistasi tehtävillä ja opiskella haluamallasi kielellä. Sisältöä voi myös kuunnella ääneenluettuna.",
-    materialsStored: "Säilyvätkö materiaalini Lexiessä?",
-    materialsStoredAnswer: "Kaikki luomasi materiaalit tallentuvat laitteellesi ja ovat aina käytettävissäsi. Voit palata niihin milloin tahansa ja jatkaa siitä, mihin jäit.",
+    whyDifferentAnswer: "Useimmat oppimissovellukset tarjoavat valmiita sisältöjä tietyille oppiaineille. Lexie sen sijaan toimii suoraan lapsen omien koulumateriaalien kanssa.\n\nMuut sovellukset vaativat, että sisältö syötetään käsin tai ne rajoittuvat tiettyihin aiheisiin. Lexie käsittelee automaattisesti mitä tahansa oppiainetta, eikä lapsen tarvitse kirjoittaa mitään itse.\n\nKun muistikorttisovellukset vaativat jokaisen termin ja määritelmän kirjoittamista erikseen, Lexie poimii nämä tiedot automaattisesti lapsen materiaaleista.\n\nNäin Lexie tekee olemassa olevista kotitehtävistä tehokkaampia.",
+    howToUse: "Millaisia oppimismenetelmiä Lexie käyttää?",
+    howToUseAnswer: "Lexie perustuu näyttöön pohjautuviin oppimismenetelmiin:\n\n• Aktiivinen muistaminen muistikorttien avulla tehostaa oppimista pelkkään lukemiseen verrattuna\n• Ajoitettu kertaus auttaa painamaan asiat pitkäkestoiseen muistiin\n• Ymmärtämisen seuranta näyttää, mitkä asiat osaat ja mitkä vaativat lisää harjoittelua\n• Monipuolinen oppiminen tekstin, äänen ja interaktiivisten harjoitusten avulla\n\nKysymysten avulla Lexie ohjaa sinua ymmärtämään asioita syvällisemmin pelkkien vastausten antamisen sijaan. Tämä kehittää kriittistä ajattelua samalla kun opit uutta sisältöä.",
+    materialsStored: "Ovatko tietoni turvassa Lexiessä?",
+    materialsStoredAnswer: "Kyllä. Emme säilytä ottamiasi alkuperäisiä kuvia käsittelyvaihetta pidempään. Luodut oppimateriaalit tallennetaan vain laitteellesi ja henkilökohtaiselle tilillesi.\n\nEmme jaa sisältöäsi muille käyttäjille tai kolmansille osapuolille. Emme käytä materiaalejasi järjestelmiemme kouluttamiseen. Lapsesi opiskelutiedot pysyvät yksityisinä.\n\nSovellus tarvitsee kameran käyttöoikeuden vain opiskelumateriaalien kuvaamiseen. Emme käytä muita laitteellasi olevia kuvia.",
+    howDesignedForKids: "Miten lapset on huomioitu Lexien suunnittelussa?",
+    howDesignedForKidsAnswer: "Suunnittelimme Lexien erityisesti lapsia varten, koska aikuisille suunnatut sovellukset ovat usein liian monimutkaisia. Nuorimmatkin alakoululaiset käyttävät Lexieä itsenäisesti ilman vanhempien apua.\n\nYmmärrämme, että lapset tarvitsevat selkeyttä ja suoraviivaisuutta. Siksi karsimme ylimääräiset valikot pois. Käytämme selkeitä ohjeita ilman lapsellista kieltä - sanat ovat tuttuja lapsille, mutta eivät aliarvioi heitä.\n\nKeskityimme vain tarpeellisiin toimintoihin, koska lasten on vaikea suodattaa liikaa tietoa kerralla. Näin lapsi voi keskittyä oppimiseen eikä joudu miettimään sovelluksen käyttöä.\n\nLukemisen avuksi tarjoamme isot alkukirjaimet tai vaihtoehtoisia fontteja. Nämä helpottavat erityisesti aloittelevia lukijoita. Huomioimme lasten erilaiset lukutaidot ja oppimistyylit.",
+    helpWithLanguageBarriers: "Miten Lexie auttaa, jos suomi ei ole äidinkieli?",
+    helpWithLanguageBarriersAnswer: "Lexie auttaa perheitä, joissa vanhemmat eivät puhu samaa kieltä kuin lapsi koulussa.\n\nSovelluksesta kuulet, miten sanat äännetään. Käännöstoiminto auttaa ymmärtämään sanoja eri kielillä.\n\nJos lapsi opiskelee suomea toisena kielenä, Lexie yhdistää uudet sanat tuttuihin käsitteisiin hänen omalla äidinkielellään.\n\nNäin vanhemmat voivat auttaa läksyissä, vaikka eivät osaisi kieltä hyvin.",
     
     // CTA
     comeTest: "Tule testaamaan",
-    ctaDescription: "Haemme perheitä testaamaan Lexieä. Seuraa miten lapsesi käyttää sovellusta, ja anna palautetta mikä toimii ja mikä ei. Testaamalla autat meitä rakentamaan Lexiestä työkalun, joka oikeasti helpottaa lasten arkea.",
+    ctaDescription: "Haemme perheitä testaamaan Lexieä. Seuraa miten lapsesi käyttää sovellusta, ja anna palautetta mikä toimii ja mikä ei. Testaamalla autat meitä rakentamaan Lexiestä työkalun, joka oikeasti helpottaa perheiden arkea ja auttaa lapsiamme oppimaan paremmin.",
     scanDownload: "Skannaa ja lataa LexieLearn",
     
     // Footer
@@ -322,7 +326,12 @@ Kannustamme käyttäjiä:
       address: "Albertinkatu 26-28",
       email: "elina.patjas@interlinear.tech",
       businessId: "3523811-5"
-    }
+    },
+
+    // Form success message
+    formSubmitSuccess: "Kiitos! Sähköpostisi on lähetetty tiimillemme.",
+    formSubmitError: "Sähköpostin lähettämisessä tapahtui virhe. Ole hyvä ja yritä uudelleen.",
+    formInvalidEmail: "Anna kelvollinen sähköpostiosoite"
   },
   en: {
     // Header
@@ -359,21 +368,25 @@ Kannustamme käyttäjiä:
     adaptiveLearningDesc: "Customize text or listen to content read aloud. Use what works for you.",
     
     // FAQ
-    faq: "Frequently Asked Questions",
-    howLexieWorks: "How does Lexie work?",
-    howLexieWorksAnswer: "Lexie converts photos of text into digital learning materials. It creates flashcards and exercises using AI. Everything happens on your device, keeping your data secure.",
-    whatCanLearn: "What can I learn with Lexie?",
-    whatCanLearnAnswer: "Lexie works with any subject material. It breaks information into manageable pieces and helps students understand concepts deeply.",
+    faq: "Frequently asked questions",
+    howLexieWorks: "How does Lexie actually work?",
+    howLexieWorksAnswer: "Lexie uses image recognition to read your study materials. When you take a photo, our technology identifies the text, analyzes the content structure, and determines what kind of learning material it is.\n\nThe system then breaks down the content into key concepts and relationships. For vocabulary, it identifies terms and definitions. For history, it recognizes events and dates. For science, it extracts concepts and explanations.\n\nThis processed information gets transformed into different practice formats:\n\n• Quizzes that test understanding at multiple levels\n• Flashcards for quick recall practice\n• Audio for correct pronunciation\n• Summaries that highlight main points\n\nThe entire process takes seconds. You don't need to type anything or format the content yourself.",
+    whatCanLearn: "What subjects work best with Lexie?",
+    whatCanLearnAnswer: "Lexie works well with language arts, social studies, science, and foreign languages. Any subject that involves text-based learning materials.\n\nLexie doesn't handle math equations well yet. While it can process math vocabulary terms, it struggles with complex formulas and calculations. We're working on improving this.\n\nSimilarly, highly visual subjects like art or music theory with complex notations might not process correctly. Text-heavy materials with clear structure work best.",
     whyDifferent: "How is Lexie different from other learning apps?",
-    whyDifferentAnswer: "Lexie works with your existing materials. It turns what students already have into practice tools that give immediate feedback.",
-    howToUse: "What can I do with the app?",
-    howToUseAnswer: "Review with flashcards, test knowledge with exercises, study in your preferred language, or listen to content read aloud.",
-    materialsStored: "Are my materials saved in Lexie?",
-    materialsStoredAnswer: "All materials save to your device and remain accessible. Pick up where you left off anytime.",
-    
+    whyDifferentAnswer: "Unlike most learning apps that provide pre-made content, Lexie works with your actual school materials - the worksheets, textbooks, and handouts your child needs to learn right now.\n\nYou don't need to manually enter content or be limited to certain subjects - just photograph any material and Lexie automatically extracts the key information.\n\nWhile flashcard apps require you to type every term and definition, Lexie extracts this information automatically.\n\nInstead of replacing homework, Lexie makes your existing homework more effective by turning it into interactive practice tools.",
+    howToUse: "What learning methods does Lexie use?",
+    howToUseAnswer: "Lexie uses principles from evidence-based learning science:\n\n• Active recall - pushing students to retrieve information rather than just re-read it\n• Spaced repetition - reviewing material at strategic intervals for better retention\n• Comprehension monitoring - helping students identify what they do and don't understand\n• Multimodal learning - engaging with content in different formats (text, audio, interactive quizzes)\n\nThe app follows a Socratic approach by asking questions that guide understanding rather than simply providing answers. This builds critical thinking skills alongside subject knowledge.",
+    materialsStored: "Is my data secure in Lexie?",
+    materialsStoredAnswer: "Yes. We don't store the original photos you take beyond the processing stage. The learning materials created are stored only on your device and in your personal account.\n\nWe don't share your content with other users or third parties. We don't use your materials to train our systems. Your child's study data stays private.\n\nThe app requires camera access only to capture study materials. We don't access other photos on your device.",
+    howDesignedForKids: "How is Lexie designed for kids?",
+    howDesignedForKidsAnswer: "We designed Lexie specifically for children, because apps made for adults are often too complicated. Even the youngest primary schoolers use Lexie independently without parents' help.\n\nWe understand that children need clarity and straightforwardness. That's why we removed extra menus. We use clear instructions without childish language - the words are familiar to children but don't underestimate them.\n\nWe focused only on necessary functions, because children find it difficult to filter too much information at once. This way the child can focus on learning instead of having to think about how to use the app.\n\nFor reading assistance, we offer capital letters or alternative fonts. These especially help beginning readers. We consider children's different reading skills and learning styles.",
+    helpWithLanguageBarriers: "How does Lexie help with language barriers?",
+    helpWithLanguageBarriersAnswer: "Lexie bridges language gaps for families where parents don't speak the language their child is learning in school.\n\nThe app provides audio pronunciation for terms so parents don't need to know how words should sound. Translation features help connect concepts between languages.\n\nFor ELL students, Lexie creates vocabulary supports that link new terms to concepts they already understand in their primary language.\n\nThis allows parents to support learning even when they face language barriers themselves.",
+
     // CTA
     comeTest: "Join the free beta",
-    ctaDescription: "We're looking for families to test Lexie. Watch your child using it and tell us what works and what doesn't. Your feedback helps us make Lexie better for real-world learning. Help us build a tool that actually makes homework time easier.",
+    ctaDescription: "We're looking for families to test Lexie. Watch your child using it and tell us what works and what doesn't. Your feedback will guide us make Lexie better for real-world learning. Help us build a tool that actually makes homework time easier.",
     scanDownload: "Scan to download LexieLearn",
     
     // Footer
@@ -658,7 +671,12 @@ We encourage users to:
       address: "Albertinkatu 26-28",
       email: "elina.patjas@interlinear.tech",
       businessId: "3523811-5"
-    }
+    },
+
+    // Form success message
+    formSubmitSuccess: "Thank you! Your email has been sent to our team.",
+    formSubmitError: "There was an error submitting your email. Please try again.",
+    formInvalidEmail: "Please enter a valid email address"
   }
 };
 

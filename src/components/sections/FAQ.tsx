@@ -35,6 +35,17 @@ const Accordion = ({ title, children }: { title: string, children: React.ReactNo
   );
 };
 
+// Function to format text with line breaks and preserve formatting
+const FormattedText = ({ text }: { text: string }) => {
+  return (
+    <div className={styles.formattedText}>
+      {text.split('\n').map((line, index) => (
+        line ? <p key={index}>{line}</p> : <br key={index} />
+      ))}
+    </div>
+  );
+};
+
 export default function FAQ() {
   const { t } = useLanguage();
   
@@ -45,19 +56,25 @@ export default function FAQ() {
           <h2 className={styles.title}>{t('faq')}</h2>
           <div className={styles.grid}>
             <Accordion title={t('howLexieWorks')}>
-              <p>{t('howLexieWorksAnswer')}</p>
+              <FormattedText text={t('howLexieWorksAnswer')} />
             </Accordion>
             <Accordion title={t('whatCanLearn')}>
-              <p>{t('whatCanLearnAnswer')}</p>
+              <FormattedText text={t('whatCanLearnAnswer')} />
             </Accordion>
             <Accordion title={t('whyDifferent')}>
-              <p>{t('whyDifferentAnswer')}</p>
+              <FormattedText text={t('whyDifferentAnswer')} />
             </Accordion>
             <Accordion title={t('howToUse')}>
-              <p>{t('howToUseAnswer')}</p>
+              <FormattedText text={t('howToUseAnswer')} />
             </Accordion>
             <Accordion title={t('materialsStored')}>
-              <p>{t('materialsStoredAnswer')}</p>
+              <FormattedText text={t('materialsStoredAnswer')} />
+            </Accordion>
+            <Accordion title={t('howDesignedForKids')}>
+              <FormattedText text={t('howDesignedForKidsAnswer')} />
+            </Accordion>
+            <Accordion title={t('helpWithLanguageBarriers')}>
+              <FormattedText text={t('helpWithLanguageBarriersAnswer')} />
             </Accordion>
           </div>
         </div>
